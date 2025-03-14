@@ -1,0 +1,11 @@
+Flask==2.0.3
+gradio==2.4.1
+python-dotenv==0.19.2
+gtts==2.2.3
+elevenlabs==0.1.0
+torch==1.9.0
+transformers==4.11.3
+opencv-python==4.5.3.20210927
+pydub==0.25.1
+numpy==1.21.2
+scipy==1.7.1

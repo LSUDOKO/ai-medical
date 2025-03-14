@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  ai-medical-chatbot:
+    build:
+      context: ./app
+      dockerfile: ../Dockerfile
+    volumes:
+      - ./static/temp_audio:/app/static/temp_audio
+    ports:
+      - "7860:7860"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    restart: unless-stopped
